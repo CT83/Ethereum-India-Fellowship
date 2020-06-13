@@ -23,7 +23,7 @@ This is a general overview of the application and selection process.
 
 3. #### Respond to a mail confirming my acceptance! - (~0.1 secs)
 
-   ![acceptance-email](notes/images/acceptance-mail.jpg)
+   ![acceptance-email](./images/acceptance-mail.jpg)
 
 ## Meeting the Mentors!
 
