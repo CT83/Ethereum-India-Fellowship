@@ -65,3 +65,8 @@ Next, we were supposed to find the first block on the blockchain to which a smar
 Closing? It was super fun and something which I had never tried before. Blockchain to me always sounded exactly like what it probably sounds to you right now, it was like a dark giant ball of a messy paraphernalia, now it just more like a tangled ball of strings, they made it look less-confusing and more approachable. This is was my first time venturing into something so unknown, having mentors and a direct line to all of their collective knowledge(s?) essentially halved the time we would have needed to grasp the concepts ourselves. 5/5 for me! 
 
 I am pretty excited for week 2, I'll keep y'all  posted.
+
+## Check out the code on Github
+
+- [CT83/Ethereum-India-Fellowship](https://github.com/CT83/Ethereum-India-Fellowship)
+
