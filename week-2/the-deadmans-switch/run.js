@@ -1,12 +1,37 @@
-var Web3 = require('web3');
-var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
+async function main() {
 
-let DMSJson = require('./build/contracts/DeadmansSwitch.json')
+    var Web3 = require('web3');
+    var web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:7545"));
 
-var abi = DMSJson["abi"];
-var address = DMSJson["networks"]['5777']['address'];
-var contract = new web3.eth.Contract(abi, address);
+    let DMSJson = require('./build/contracts/DeadmansSwitch.json')
 
-var res = contract.methods.getValueOfabc().call().then(
-    console.log("test")
-)
+
+    var abi = [
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "getValueOfabc",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+
+    console.log(abi);
+    console.log(address);
+
+    var address = "0x17280dC5d3da927eba1cDBE7dbf66aD6808B79FC";
+    var dmsContract = new web3.eth.Contract(abi, address);
+
+    var res = await dmsContract.methods.getValueOfabc()
+    console.log(res)
+}
+
+main();

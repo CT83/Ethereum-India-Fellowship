@@ -17,12 +17,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getValueOfabc\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Code/NodeJS/Ethereum-India-Fellowship/week-2/the-deadmans-switch/contracts/DeadmansSwitch.sol\":\"DeadmansSwitch\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Code/NodeJS/Ethereum-India-Fellowship/week-2/the-deadmans-switch/contracts/DeadmansSwitch.sol\":{\"keccak256\":\"0xb104ee1b4cba0004ea61274c49bc9b2c074e9926d5190ef645525ef035eac9f1\",\"urls\":[\"bzz-raw://d63ac31c152c51afed5c0610da818d477a634be0cbbe77ae525552205677e3e0\",\"dweb:/ipfs/QmS6tpyWZX4tfSBAswdGgT3Z91SmipdD8ech3CZN5Rdb8m\"]}},\"version\":1}",
-  "bytecode": "0x60806040526040518060400160405280600581526020017f48656c6c6f0000000000000000000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b61018a806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80635102eb3c14610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561014b5780601f106101205761010080835404028352916020019161014b565b820191906000526020600020905b81548152906001019060200180831161012e57829003601f168201915b505050505090509056fea265627a7a723158201dbf25720f22c832f518937d44aa82f0c2bd08052ede58f5d36e1f4d4fe434b964736f6c63430005100032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80635102eb3c14610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561014b5780601f106101205761010080835404028352916020019161014b565b820191906000526020600020905b81548152906001019060200180831161012e57829003601f168201915b505050505090509056fea265627a7a723158201dbf25720f22c832f518937d44aa82f0c2bd08052ede58f5d36e1f4d4fe434b964736f6c63430005100032",
-  "sourceMap": "36:193:0:-;;;111:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;36:193;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:193:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
-  "deployedSourceMap": "36:193:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:193:0;;;;;;;;;;;;;;;;;;;138:88;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;138:88:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;184:13;217:1;210:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;138:88;:::o",
-  "source": "pragma solidity >=0.4.21 <0.7.0;\r\n\r\ncontract DeadmansSwitch {\r\n    // address[16] public userAddresses;\r\n\r\n    string d = \"Hello\";\r\n\r\n    function getValueOfabc() public view returns (string memory) {\r\n        return d;\r\n    }\r\n}\r\n",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getValueOfabc\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/Code/NodeJS/Ethereum-India-Fellowship/week-2/the-deadmans-switch/contracts/DeadmansSwitch.sol\":\"DeadmansSwitch\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/Code/NodeJS/Ethereum-India-Fellowship/week-2/the-deadmans-switch/contracts/DeadmansSwitch.sol\":{\"keccak256\":\"0x0f7a8eb92c40b0638853f1795453f267937e47a2ddb23fefadde58e6308e579a\",\"urls\":[\"bzz-raw://c42399a3627db9f367bbcea3143c7edd5db5d582fbc48710eab1d2d75e4dc5b1\",\"dweb:/ipfs/QmX86vSPufMCJU1PTJjr6FJaffMAu7Dz4yjteWsbo6Uk33\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280600581526020017f48656c6c6f0000000000000000000000000000000000000000000000000000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b50610107565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106100a357805160ff19168380011785556100d1565b828001600101855582156100d1579182015b828111156100d05782518255916020019190600101906100b5565b5b5090506100de91906100e2565b5090565b61010491905b808211156101005760008160009055506001016100e8565b5090565b90565b61018a806101166000396000f3fe608060405234801561001057600080fd5b506004361061002b5760003560e01c80635102eb3c14610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561014b5780601f106101205761010080835404028352916020019161014b565b820191906000526020600020905b81548152906001019060200180831161012e57829003601f168201915b505050505090509056fea265627a7a72315820527205b6e45d355e680407849281d622c3fb7df99fb07d7f0114ee445e14935964736f6c63430005100032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061002b5760003560e01c80635102eb3c14610030575b600080fd5b6100386100b3565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561007857808201518184015260208101905061005d565b50505050905090810190601f1680156100a55780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b606060008054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561014b5780601f106101205761010080835404028352916020019161014b565b820191906000526020600020905b81548152906001019060200180831161012e57829003601f168201915b505050505090509056fea265627a7a72315820527205b6e45d355e680407849281d622c3fb7df99fb07d7f0114ee445e14935964736f6c63430005100032",
+  "sourceMap": "29:193:0:-;;;104:18;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;29:193;8:9:-1;5:2;;;30:1;27;20:12;5:2;29:193:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "29:193:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;29:193:0;;;;;;;;;;;;;;;;;;;131:88;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;131:88:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;177:13;210:1;203:8;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;131:88;:::o",
+  "source": "pragma solidity = 0.5.16;\r\n\r\ncontract DeadmansSwitch {\r\n    // address[16] public userAddresses;\r\n\r\n    string d = \"Hello\";\r\n\r\n    function getValueOfabc() public view returns (string memory) {\r\n        return d;\r\n    }\r\n}\r\n",
   "sourcePath": "D:\\Code\\NodeJS\\Ethereum-India-Fellowship\\week-2\\the-deadmans-switch\\contracts\\DeadmansSwitch.sol",
   "ast": {
     "absolutePath": "/D/Code/NodeJS/Ethereum-India-Fellowship/week-2/the-deadmans-switch/contracts/DeadmansSwitch.sol",
@@ -38,15 +38,12 @@
         "id": 1,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
+          "=",
+          "0.5",
+          ".16"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:0"
+        "src": "0:25:0"
       },
       {
         "baseContracts": [],
@@ -67,7 +64,7 @@
             "name": "d",
             "nodeType": "VariableDeclaration",
             "scope": 13,
-            "src": "111:18:0",
+            "src": "104:18:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -78,7 +75,7 @@
               "id": 2,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "111:6:0",
+              "src": "104:6:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -94,7 +91,7 @@
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "122:7:0",
+              "src": "115:7:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_06b3dfaec148fb1bb2b066f10ec285e7c9bf402ab32aa78a5d38e34566810cd2",
@@ -108,7 +105,7 @@
             "body": {
               "id": 11,
               "nodeType": "Block",
-              "src": "199:27:0",
+              "src": "192:27:0",
               "statements": [
                 {
                   "expression": {
@@ -118,7 +115,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4,
-                    "src": "217:1:0",
+                    "src": "210:1:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
@@ -127,7 +124,7 @@
                   "functionReturnParameters": 8,
                   "id": 10,
                   "nodeType": "Return",
-                  "src": "210:8:0"
+                  "src": "203:8:0"
                 }
               ]
             },
@@ -142,7 +139,7 @@
               "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "160:2:0"
+              "src": "153:2:0"
             },
             "returnParameters": {
               "id": 8,
@@ -154,7 +151,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 12,
-                  "src": "184:13:0",
+                  "src": "177:13:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -165,7 +162,7 @@
                     "id": 6,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "184:6:0",
+                    "src": "177:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -175,20 +172,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "183:15:0"
+              "src": "176:15:0"
             },
             "scope": 13,
-            "src": "138:88:0",
+            "src": "131:88:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 14,
-        "src": "36:193:0"
+        "src": "29:193:0"
       }
     ],
-    "src": "0:231:0"
+    "src": "0:224:0"
   },
   "legacyAST": {
     "absolutePath": "/D/Code/NodeJS/Ethereum-India-Fellowship/week-2/the-deadmans-switch/contracts/DeadmansSwitch.sol",
@@ -204,15 +201,12 @@
         "id": 1,
         "literals": [
           "solidity",
-          ">=",
-          "0.4",
-          ".21",
-          "<",
-          "0.7",
-          ".0"
+          "=",
+          "0.5",
+          ".16"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:32:0"
+        "src": "0:25:0"
       },
       {
         "baseContracts": [],
@@ -233,7 +227,7 @@
             "name": "d",
             "nodeType": "VariableDeclaration",
             "scope": 13,
-            "src": "111:18:0",
+            "src": "104:18:0",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
@@ -244,7 +238,7 @@
               "id": 2,
               "name": "string",
               "nodeType": "ElementaryTypeName",
-              "src": "111:6:0",
+              "src": "104:6:0",
               "typeDescriptions": {
                 "typeIdentifier": "t_string_storage_ptr",
                 "typeString": "string"
@@ -260,7 +254,7 @@
               "kind": "string",
               "lValueRequested": false,
               "nodeType": "Literal",
-              "src": "122:7:0",
+              "src": "115:7:0",
               "subdenomination": null,
               "typeDescriptions": {
                 "typeIdentifier": "t_stringliteral_06b3dfaec148fb1bb2b066f10ec285e7c9bf402ab32aa78a5d38e34566810cd2",
@@ -274,7 +268,7 @@
             "body": {
               "id": 11,
               "nodeType": "Block",
-              "src": "199:27:0",
+              "src": "192:27:0",
               "statements": [
                 {
                   "expression": {
@@ -284,7 +278,7 @@
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
                     "referencedDeclaration": 4,
-                    "src": "217:1:0",
+                    "src": "210:1:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage",
                       "typeString": "string storage ref"
@@ -293,7 +287,7 @@
                   "functionReturnParameters": 8,
                   "id": 10,
                   "nodeType": "Return",
-                  "src": "210:8:0"
+                  "src": "203:8:0"
                 }
               ]
             },
@@ -308,7 +302,7 @@
               "id": 5,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "160:2:0"
+              "src": "153:2:0"
             },
             "returnParameters": {
               "id": 8,
@@ -320,7 +314,7 @@
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "scope": 12,
-                  "src": "184:13:0",
+                  "src": "177:13:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -331,7 +325,7 @@
                     "id": 6,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "184:6:0",
+                    "src": "177:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -341,20 +335,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "183:15:0"
+              "src": "176:15:0"
             },
             "scope": 13,
-            "src": "138:88:0",
+            "src": "131:88:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 14,
-        "src": "36:193:0"
+        "src": "29:193:0"
       }
     ],
-    "src": "0:231:0"
+    "src": "0:224:0"
   },
   "compiler": {
     "name": "solc",
@@ -364,12 +358,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0x1Cd422c3f6E0bC219aAf8e8806b698C720e7Dbc9",
-      "transactionHash": "0x3b2f3ba6d593d65217b2d5b2656c6a13c6680f25c69136fa0bcc801c2fa851ed"
+      "address": "0x17280dC5d3da927eba1cDBE7dbf66aD6808B79FC",
+      "transactionHash": "0x3e9bbc6870aac4de8db741da20716d1bca0adf025c772643cd552703e576b5e7"
     }
   },
   "schemaVersion": "3.2.0",
-  "updatedAt": "2020-06-20T08:32:03.795Z",
+  "updatedAt": "2020-06-20T10:51:25.600Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
