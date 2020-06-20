@@ -5,7 +5,6 @@ async function main() {
 
     let DMSJson = require('./build/contracts/DeadmansSwitch.json')
 
-
     var abi = [
         {
             "constant": true,
@@ -30,7 +29,7 @@ async function main() {
     var address = "0x17280dC5d3da927eba1cDBE7dbf66aD6808B79FC";
     var dmsContract = new web3.eth.Contract(abi, address);
 
-    var res = await dmsContract.methods.getValueOfabc()
+    var res = await dmsContract.methods.getValueOfabc().call()
     console.log(res)
 }
 
