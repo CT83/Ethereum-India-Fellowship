@@ -55,13 +55,10 @@ contract("DeadMansSwitchContract", accounts => {
         const url = "http://127.0.0.1:7545";
         var web3 = new Web3(new Web3.providers.HttpProvider(url));
 
-        let DMSJson = require('../build/contracts/DeadmansSwitch.json')
-
-        var abi = DMSJson["abi"];
         var contractAddress = DMSContract.address;
-        var dmsContract = new web3.eth.Contract(abi, contractAddress);
-        let send = await web3.eth.sendTransaction({ from: accounts[0], to: contractAddress, value: web3.utils.toWei("1", "ether") });
-        console.log(send)
+        let send = await web3.eth.sendTransaction({ from: accounts[0], to: contractAddress, value: web3.utils.toWei("3", "ether") });
+        const ownerOldBalance = await web3.eth.getBalance(accounts[0])
+        const nextToKinOldBalance = await web3.eth.getBalance(accounts[1])
 
         const res = await DMSContract.getData();
 
@@ -76,12 +73,19 @@ contract("DeadMansSwitchContract", accounts => {
         const { promisify } = require('util')
         const sleep = promisify(setTimeout)
 
-        sleep(100).then(() => {
-            assert(resDrained == false);
-        })
+        await DMSContract.drainIfDead();
+        const resDrained2 = await DMSContract.getDrained();
+        assert(resDrained2 == false);
 
-        sleep(3000).then(() => {
-            assert(resDrained == true);
-        })
+        await sleep(3000)
+        await DMSContract.drainIfDead();
+        const resDrained3 = await DMSContract.getDrained();
+        assert(resDrained3 == true);
+
+        const ownerNewBalance = await web3.eth.getBalance(accounts[0])
+        const nextToKinNewBalance = await web3.eth.getBalance(accounts[1])
+
+        assert(ownerNewBalance < ownerOldBalance);
+        assert(nextToKinNewBalance > nextToKinOldBalance);
     })
 })

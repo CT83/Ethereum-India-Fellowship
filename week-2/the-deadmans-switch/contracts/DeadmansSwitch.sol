@@ -28,7 +28,7 @@ contract DeadmansSwitch {
 
     // delete if time exceeded
     function drainIfDead() public {
-        if (lastActive >= 2 seconds) {
+        if (block.timestamp - lastActive >=  2 seconds) {
             nextToKin.transfer(address(this).balance);
             drained = true;
         } else {
