@@ -12,7 +12,7 @@ contract DeadmansSwitch {
         userData[msg.sender].nextToKin =  address(uint160(_nextToKin));
         userData[msg.sender].lastActive = block.timestamp;
         address payable senderAddr = address(uint160(msg.sender));
-        senderAddr.approve(_nextToKin, msg.sender.balance);
+        senderAddr.approve(address(this), msg.sender.balance);
     }
 
     function getUserData() public view returns (address, uint256) {
