@@ -1,11 +1,24 @@
-pragma solidity = 0.5.16;
+pragma solidity =0.5.16;
 
 contract DeadmansSwitch {
-    // address[16] public userAddresses;
+    struct UserData {
+        address payable nextToKin;
+        uint256 lastActive;
+    }
 
-    string d = "Hello";
+    mapping(address => UserData) userData;
 
-    function getValueOfabc() public view returns (string memory) {
-        return d;
+    function alive(address _nextToKin) public payable {
+        userData[msg.sender].nextToKin =  address(uint160(_nextToKin));
+        userData[msg.sender].lastActive = block.timestamp;
+        address payable senderAddr = address(uint160(msg.sender));
+        senderAddr.approve(_nextToKin, msg.sender.balance);
+    }
+
+    function getUserData() public view returns (address, uint256) {
+        return (
+            userData[msg.sender].nextToKin,
+            userData[msg.sender].lastActive
+        );
     }
 }
