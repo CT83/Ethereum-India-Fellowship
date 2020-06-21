@@ -1,3 +1,5 @@
+const { assert } = require('console');
+
 const DeadMansSwitchContract = artifacts.require("DeadmansSwitch");
 
 contract("DeadMansSwitchContract", () => {
@@ -13,34 +15,61 @@ contract("DeadMansSwitchContract", accounts => {
         const DMSContract = await DeadMansSwitchContract.deployed();
         assert(DMSContract.address !== '');
 
-        const time = Math.round(new Date().getTime() / 1000);
-        await DMSContract.alive(accounts[1], { from: accounts[0] });
+        // const time = Math.round(new Date().getTime() / 1000);
+        await DMSContract.register(accounts[1], { from: accounts[0] });
+        await DMSContract.still_alive({ from: accounts[0] });
 
-        const res = await DMSContract.getUserData();
-        assert(res[0] == accounts[1])
-        assert(res[1] <= time + 1000)
-
+        const res = await DMSContract.getData();
+        console.log(res)
+        assert(res[0] == accounts[0])
+        assert(res[1] <= accounts[1])
     })
 })
 
-contract("DeadMansSwitchContract", () => {
-    it("Check if alive beacon is sent successfully", async () => {
+contract("DeadMansSwitchContract", accounts => {
+    it("Check if alive beacon can be sent successfully", async () => {
         const DMSContract = await DeadMansSwitchContract.deployed();
         assert(DMSContract.address !== '');
-        assert(false)
-        // var address = "0x4d3CC1afDACB24a0174C3DFa6B17F48d75fb6C7F";
-        // var res = await DMSContract.registerAddress(address);
-        // assert(res == address + " registered successfully!")
+
+        await DMSContract.register(accounts[1], { from: accounts[0] });
+        const time = Math.round(new Date().getTime() / 1000);
+        await DMSContract.still_alive({ from: accounts[0] });
+
+        const res = await DMSContract.getData();
+        console.log(res)
+        assert(res[0] == accounts[0])
+        assert(res[1] <= accounts[1])
+        assert(res[2].toNumber() <= time + 1000)
     })
 })
 
-contract("DeadMansSwitchContract", () => {
+contract("DeadMansSwitchContract", accounts => {
     it("Check if drain on death works", async () => {
         const DMSContract = await DeadMansSwitchContract.deployed();
         assert(DMSContract.address !== '');
-        var address = "";
-        assert(false)
-        // var res = await DMSContract.registerAddress()();
-        // assert(res == address + " registered successfully!")
+
+        await DMSContract.register(accounts[1], { from: accounts[0] });
+        const time = Math.round(new Date().getTime() / 1000);
+        await DMSContract.still_alive({ from: accounts[0] });
+
+        const res = await DMSContract.getData();
+        assert(res[0] == accounts[0])
+        assert(res[1] <= accounts[1])
+        assert(res[2].toNumber() <= time + 1000)
+
+        await DMSContract.drainIfDead();
+
+        const resDrained = await DMSContract.getDrained();
+        assert(resDrained == false);
+        const { promisify } = require('util')
+        const sleep = promisify(setTimeout)
+
+        sleep(100).then(() => {
+            assert(resDrained == false);
+        })
+
+        sleep(3000).then(() => {
+            assert(resDrained == true);
+        })
     })
 })
