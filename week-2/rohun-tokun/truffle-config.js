@@ -1,8 +1,6 @@
 require('dotenv').config();
 const PrivateKeyProvider = require("truffle-privatekey-provider");
 
-console.log(process.env.INFURA_API_KEY)
-
 module.exports = {
   networks: {
     development: {

@@ -60,4 +60,8 @@ contract RohunTokun {
 
         return true;
     }
+
+    function getBalance(address _user) public view returns (uint256) {
+        return balanceOf[_user];
+    }
 }
