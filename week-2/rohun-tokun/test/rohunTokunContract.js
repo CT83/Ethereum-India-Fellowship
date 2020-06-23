@@ -20,7 +20,5 @@ contract("RohunTokunContract", accounts => {
         assert(oldSupply == 1000);
 
         await RTContract.transfer(accounts[1], 2, { from: accounts[0] });
-        const acc1Bal = await RTContract.getBalance(accounts[1]);
-        assert(acc1Bal == 2);
     })
 })
